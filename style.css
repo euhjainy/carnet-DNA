@@ -1,0 +1,171 @@
+
+
+@font-face {
+    font-family: police1;
+    src: url("fonts/HelveticaNeue.ttc")
+}
+.img3{
+  width: 55vw;
+}
+
+#knit{
+  padding-top: 5vw;
+}
+#cart{
+  margin-top: -5vw;
+}
+#zine{
+  margin-top: -6vw;
+}
+#article {
+  margin-top: -12vw;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+  
+  nav.menu {
+      position: sticky;
+      top: 0;
+      margin-left: 1vw;
+      display: flex;
+      height: 10px;
+      font-style: italic;   
+  }
+  #titre{
+    text-decoration: none; 
+    /* ----> text decoration permet de mettre en italic, surligné, sous ligné ou alors avec non comme ici enlévé toute sorte de 'decoration' */
+    color: black;
+  }
+
+  /* contient la strcture des trois sections */
+  .container {
+    display: flex; 
+    /* display = position flex= figé  */
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  
+  .section {
+    height: 100%;
+    padding: 20px;
+    /* traduit par la taille de l'interface sur un ordinateur  */
+  }
+  
+  .section-left {
+    width: 55vw;
+   
+    font-family: police1;
+  }
+  
+  .section-middle {
+    width: 15vw;
+    position: sticky;
+    top: 0;
+    background-color: #ebebeb;
+    font-family: police1;
+  }
+  
+  .section-right {
+    width: 30vw;
+    
+    font-family: police1;
+  }
+  
+  .bloc2 img{
+    display: inline;
+    align-content: center;
+    width : 20vw;
+    /* margin-left: 8vw;
+    margin-right: 5vw; */
+    margin: 1vw;
+
+    }
+    .bloc3 img{
+      display: inline;
+      align-content: center;
+      width : 40vw;
+      /* margin-left: 8vw;
+      margin-right: 5vw; */
+      margin: 1vw;
+  
+      }
+
+    h2{
+        margin-left: 1vw;
+        font-style: italic;
+        font-size: 1.8vw;
+    }
+
+    .info1{
+
+        font-family: police1;
+        margin-left: 1vw;
+        font-size: 1.2vw;
+        
+    }
+
+    .section-right p {
+        margin-bottom: 25vw;
+        margin-top: 2vw;
+        display: flex;
+        font-size: 1.2vw;
+      }
+
+      .info{
+        color: gray;
+        margin-left: 1vw;
+        font-size: 1.5vw;
+    }
+
+    .explication{
+      display: none;
+    }
+
+
+    .img2{
+      width : 45vw
+    }
+  #prof{
+    font-size: 1vw;
+    font-style: italic;
+  }
+
+                   
+/* cette partie vient à la fin du css pour ne pas te perdre, elle permet de rendre ton site responsive, en gros qu'il s'adapte au taille d'écran !, ici il s'adapte au téléphone
+j'ai donc élévé le rythme des 3 sections pour en faire plus qu'une pour que ce soit + fluide et agréable sur un petit écran :) */
+  
+
+@media screen and (orientation: portrait) {
+
+      .section-left {
+        width: 100vw;
+        font-family: police1;
+      }
+      .bloc2 img{
+        display: inline;
+        align-content: center;
+        width : 40vw;
+        /* margin-left: 8vw;
+        margin-right: 5vw; */
+        margin: 1vw;
+    
+        }
+    
+      .section-middle {
+       display: none;
+      }
+      
+      .section-right {
+       display: none;
+      }
+      .explication {
+        margin-left: 1.5vw;
+        margin-top: 2vw;
+        display: flex;
+        font-size: 1.5vw;
+        padding-right: 5vw;
+      } 
+}

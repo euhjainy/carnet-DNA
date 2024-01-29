@@ -1,0 +1,74 @@
+@font-face {
+    font-family: police1;
+    src: url("fonts/HelveticaNeue.ttc")
+}
+nav.menu {
+  position: sticky;
+  top: 0;
+  margin-left: 1vw;
+  display: flex;
+  height: 10px;
+  font-style: italic;
+  
+}
+#titre{
+text-decoration: none;
+  color: black;
+}
+ 
+ .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  height: 50vh;
+}
+
+.image-container {
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.image-container img {
+  width: 60vw;
+  height: auto;
+  object-fit: contain;
+  margin: 1vw;
+}
+
+
+.image-container2 {
+  width: 60vw;
+
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+ 
+}
+.image-container2 img {
+  width: 30vw;
+  height: auto;
+  object-fit: contain;
+  margin: 1vw;
+ 
+ 
+}
+
+.image-container.landscape {
+  width: 50vw;
+}
+
+.image-container.landscape img {
+  height: 50vw;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    width: 100%;
+  }
+}
